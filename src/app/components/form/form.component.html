@@ -1,0 +1,14 @@
+<div class="container ">
+  <h1>FRAMEWORK ANGULAR</h1>
+  <div>
+    <input type="text" name="item" id="item" #item>
+    <button (click)="add(item)" type="button" class="btn">
+      Add
+    </button>
+  </div>
+
+  <div *ngFor="let item of items">
+    <li>{{item}}</li>
+  </div>
+
+</div>
